@@ -1,0 +1,7 @@
+{"record":{"type":"access_log","ip":"192.168.0.1"},"error":"Invalid userId"}
+{"record":{"type":"access_log","ip":"10.0.0.2"},"error":"Invalid userId"}
+{"record":{"type":"access_log","ip":"not-an-ip"},"error":"Invalid userId"}
+{"record":{"type":"access_log","ip":"192.168.0.4"},"error":"Invalid userId"}
+{"record":{"type":"transaction"},"error":"Invalid amount"}
+{"record":{"type":"transaction"},"error":"Invalid currency"}
+{"record":{"type":"system_error"},"error":"Invalid log level: fatal"}

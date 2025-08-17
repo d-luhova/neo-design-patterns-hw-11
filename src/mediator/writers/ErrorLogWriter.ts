@@ -9,12 +9,18 @@ export class ErrorLogWriter {
     this.records.push(record);
   }
 
-  async finalize() {
+    async finalize() {
     const outputDir = path.resolve("src/output");
     await fs.mkdir(outputDir, { recursive: true });
 
     const outputFile = path.join(outputDir, "errors.jsonl");
-    const lines = this.records.map(r => JSON.stringify(r));
+    const lines = this.records.map(r =>
+      JSON.stringify({
+        timestamp: r.timestamp,
+        level: r.level,
+        message: r.message,
+      })
+    );
     await fs.writeFile(outputFile, lines.join("\n"), "utf-8");
   }
 }
