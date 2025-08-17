@@ -1,0 +1,7 @@
+{"type":"access_log","timestamp":"2025-05-01T12:00:00.000Z","userId":"user-123","ip":"192.168.0.1","error":"Invalid record: userId is not a number"}
+{"type":"access_log","timestamp":"2025-05-01T12:01:00.000Z","userId":"user-456","ip":"10.0.0.2","error":"Invalid record: userId is not a number"}
+{"type":"access_log","timestamp":"2025-05-01T12:03:00.000Z","userId":"user-789","ip":"not-an-ip","error":"Invalid record: userId is not a number"}
+{"type":"access_log","userId":"user-000","ip":"192.168.0.4","error":"Invalid record: userId is not a number"}
+{"type":"transaction","amount":"not-a-number","currency":"usd","timestamp":"2025-05-01T12:13:00.000Z","error":"Invalid amount"}
+{"type":"transaction","amount":"100.00","currency":"","timestamp":"2025-05-01T12:14:00.000Z","error":"Invalid currency"}
+{"type":"system_error","timestamp":"2025-05-01T12:17:00.000Z","level":"fatal","message":"Unknown error","error":"Invalid log level: fatal"}
